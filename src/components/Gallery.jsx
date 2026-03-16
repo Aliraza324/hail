@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
 
 const images = [
-  { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80', label: 'Clean Living Room' },
+  { src: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', label: 'Clean Living Room' },
   { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80', label: 'Spotless Villa' },
-  { src: 'https://images.unsplash.com/photo-1572331165267-854da2b021b1?w=600&q=80', label: 'Crystal Clear Pool' },
+  { src: 'https://plus.unsplash.com/premium_photo-1720054284585-da56a9557e84?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', label: 'Crystal Clear Pool' },
   { src: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80', label: 'Professional Team' },
-  { src: 'https://images.unsplash.com/photo-1527515637462-cee1395c108c?w=600&q=80', label: 'Modern Kitchen' },
+  { src: 'https://images.unsplash.com/photo-1722649957265-372809976610?q=80&w=1494&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', label: 'Modern Kitchen' },
   { src: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80', label: 'Sparkling Bathroom' },
 ]
 

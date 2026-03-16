@@ -25,7 +25,7 @@ export default function Hero() {
         }} />
       </div>
 
-      <div className="container-main" style={{ position: 'relative', zIndex: 1, paddingTop: '7rem', paddingBottom: '4rem' }}>
+      <div className="container-main hero-content" style={{ position: 'relative', zIndex: 1, paddingTop: '7rem', paddingBottom: '4rem' }}>
         <div style={{ maxWidth: '640px' }}>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -87,6 +87,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.36 }}
+            className="hero-buttons"
             style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}
           >
             <a href="#contact" className="btn btn-primary btn-lg">
@@ -110,6 +111,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
+            className="hero-stats"
             style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(4, 1fr)',
@@ -135,8 +137,20 @@ export default function Hero() {
       </div>
 
       <style>{`
+        @media (max-width: 768px) {
+          #home .hero-content { padding-top: 6rem !important; padding-bottom: 3rem !important; }
+          #home .hero-stats {
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 1.25rem !important;
+          }
+          #home .hero-buttons { flex-direction: column !important; }
+          #home .hero-buttons a { width: 100%; text-align: center; justify-content: center; }
+        }
         @media (max-width: 480px) {
-          #home [style] { padding-top: 6rem !important; }
+          #home .hero-content { padding-top: 5rem !important; padding-bottom: 2rem !important; }
+          #home .hero-stats {
+            grid-template-columns: repeat(2, 1fr) !important;
+          }
         }
       `}</style>
     </section>

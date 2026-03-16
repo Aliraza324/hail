@@ -9,7 +9,7 @@ const services = [
   {
     title: 'Pool Cleaning',
     desc: 'Crystal clear pools with expert maintenance, chemical balancing, and deep scrubbing.',
-    image: 'https://images.unsplash.com/photo-1572331165267-854da2b021b1?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1509577330292-0532d33c053e?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     title: 'Water Tank Cleaning',
@@ -24,12 +24,12 @@ const services = [
   {
     title: 'Pest Control',
     desc: 'Safe, effective pest elimination using approved eco-friendly methods and products.',
-    image: 'https://images.unsplash.com/photo-1632935318737-4956e2812f1c?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1581578017093-cd30fce4eeb7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     title: 'Carpet Cleaning',
     desc: 'Steam cleaning technology for deep stain removal and fresh, spotless carpets.',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80',
+    image: 'https://plus.unsplash.com/premium_photo-1661663379320-213541539ec8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
 ]
 
