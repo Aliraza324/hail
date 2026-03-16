@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-  --font-inter: 'Inter', sans-serif;
-  --color-primary: #2563EB;
-  --color-primary-dark: #1D4ED8;
-  --color-primary-light: #3B82F6;
-  --color-primary-50: #EFF6FF;
-  --color-primary-100: #DBEAFE;
-  --color-secondary: #0EA5E9;
-  --color-accent: #06B6D4;
-  --color-dark: #0F172A;
-  --color-dark-light: #1E293B;
-  --color-gray-50: #F8FAFC;
-  --color-gray-100: #F1F5F9;
-  --color-gray-200: #E2E8F0;
-  --color-gray-300: #CBD5E1;
-  --color-gray-400: #94A3B8;
-  --color-gray-500: #64748B;
-  --color-gray-600: #475569;
-  --color-gray-700: #334155;
-  --color-success: #10B981;
-  --color-warning: #F59E0B;
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  /* Primary Blue */
+  --color-brand: #2563EB;
+  --color-brand-hover: #1D4ED8;
+  --color-brand-light: #3B82F6;
+  --color-brand-soft: #DBEAFE;
+  --color-brand-bg: #EFF6FF;
+
+  /* Neutrals */
+  --color-heading: #0F172A;
+  --color-body: #475569;
+  --color-muted: #94A3B8;
+  --color-surface: #F8FAFC;
+  --color-border: #E2E8F0;
+  --color-card: #FFFFFF;
+
+  /* Accents */
+  --color-green: #10B981;
+  --color-green-bg: #D1FAE5;
+  --color-orange: #F59E0B;
   --color-whatsapp: #25D366;
 }
 
@@ -28,6 +29,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 html {
@@ -36,20 +38,53 @@ html {
 }
 
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  color: var(--color-dark);
-  background: #fff;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--color-body);
+  background: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
 }
 
 ::selection {
-  background: var(--color-primary);
+  background: var(--color-brand);
   color: #fff;
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-heading);
+  line-height: 1.2;
+}
+
+/* Utility classes Tailwind v4 can't easily do */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+.container-main {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+@media (min-width: 640px) {
+  .container-main {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
